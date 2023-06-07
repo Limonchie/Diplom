@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Определение птиц по фотографии</title>
+    <link rel="icon" type="image/png" href="img/6.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="./vendor/tf.min.js"></script>
+    <script src="./vendor/teachablemachine-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+    <style type="text/css">
+        body{
+            background: -webkit-linear-gradient(left, #f2ddd3, #ebc2af); 
+            background: -o-linear-gradient(right, #f2ddd3, #ebc2af);
+            background: -moz-linear-gradient(right, #f2ddd3, #ebc2af); 
+            background: linear-gradient(to right, #f2ddd3, #ebc2af); 
+            background-color: #f2ddd3;
+        }
+    </style>
+
+    <header>
+
+        <div class="header">
+            <img src="img/6.png" alt="logo" />
+            <center>
+                <h1>Определи птицу</h1>
+            </center>
+        </div>
+    </header>
+
+    <p></p>
+    <div class="img1"></div>
+    <div class="img2"></div>
+    <center>
+        <div class="container">
+
+            <div class="box">
+                <p></p>
+            </div>
+
+
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+            <div class="example-1">
+              <div class="form-group">
+                <label class="label">
+                    <input  name="file" id="input" type="file" accept="image/*" onchange="init(this.files)">
+                    <i class="material-icons">attach_file</i>
+                    <span class="title">Добавить файл</span>
+                    <input type="file">
+                </label>
+            </div>
+        </div>
+
+        <p></p>
+        <p><small>Модель умеет распознавать более 100 видов птиц</small></p>
+        <p id="preview" class="mt-3">
+            <img src="" id="image">
+        </p>
+        <p id="result"></p>
+    </div>
+
+
+    <script type="text/javascript">
+        let date = document.getElementById('date');
+        date.innerHTML = new Date().getFullYear();
+    </script>
+    <script src="./pticy.js" type="text/javascript"></script>
+    <script src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+</center> 
+</body>
+</html>
